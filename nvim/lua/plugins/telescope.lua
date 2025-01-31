@@ -50,5 +50,10 @@ return {
 				cwd = vim.fn.stdpath("config")
 			}
 		end)
+		vim.keymap.set("n", "<leader>sai", function()
+			builtin.live_grep {
+				cwd = "~/.local/share/nvim/parrot/chats/",
+			}
+		end)
 	end,
 }
